@@ -1,4 +1,5 @@
 #Back
+
 ###Stack
 - Java versão 11
 - Spring Boot versão 2.3.4.RELEASE
@@ -34,6 +35,7 @@
 - Sonar
 
 #Front
+
 ###Stack
 - Vue.js versão 2.6.10
 - Template https://coreui.io
@@ -51,9 +53,9 @@
 - No navegador abra o endereço http://localhost:8081/
 - Se autentique como administraodr, usuário: goku, senha: 123
 
-###Info
+#Info
 - O menu Usuários só está com acesso ao usuário com permissão ADMIN
 
-###TODO
+#TODO
 - Testes com Jest
 
