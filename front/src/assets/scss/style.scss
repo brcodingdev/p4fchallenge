@@ -1,0 +1,199 @@
+// If you want to override variables do it here
+@import 'variables';
+
+// Import styles
+@import '~@coreui/coreui/scss/coreui';
+
+// If you want to add something do it here
+@import 'custom';
+
+.card-header>.c-icon:first-child {
+  margin-right: 0.1rem;
+  margin-top: 0.1rem;
+  vertical-align: top;
+  width: 1.2rem;
+  height: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.btn-cad {
+  float: left;
+  margin-bottom: 10px;
+}
+
+:invalid {
+  box-shadow: none;
+  /* FF */
+  outline: 0;
+  /* IE 10 */
+}
+
+.btn-save {
+  margin-right: 10px;
+}
+
+.field-calc {
+  border: 1px solid #999;
+  font-size: 11px;
+  text-align: center;
+  margin: 1px 6px 0px 0;
+  padding: 0 8px 1px 7px;
+}
+
+.field-calc legend {
+  font-size: 11px;
+}
+
+.field-calc label {
+  font-size: 11px;
+  padding-right: 5px;
+}
+
+.col-calc {
+  padding: 0 0 0 0;
+}
+
+.qty-label {
+  margin-left: 2px;
+}
+
+.input-calc {
+  border-radius: 3px;
+  font-size: 11px;
+  border: 1px solid #999;
+  width: 3em;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+}
+
+.percent-calc {
+  font-size: 12px;
+}
+
+.main-calc {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.label-calc {
+  font-size: 13px;
+}
+
+.col-wallet {
+  margin: 0 0 0 0;
+}
+
+.row-calc {
+  display: inline-flex;
+}
+
+.head-card {
+  background-color: rgb(226, 226, 226);
+  font-weight: bold;
+}
+
+.dropbox {
+  outline: 2px dashed grey;
+  outline-offset: -10px;
+  background: lightcyan;
+  color: dimgray;
+  padding: 5px 0 0 0;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.input-file {
+  opacity: 0;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.dropbox:hover {
+  background: lightblue;
+}
+
+.dropbox p {
+  font-size: 1.2em;
+  text-align: center;
+  padding: 15px 0 15px 0;
+}
+
+.text-danger {
+  display: none !important;
+}
+
+.quarter__header span {
+  width: 3.85em;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+div .my-5 h2 {
+  display: none;
+}
+
+div .my-5:after {
+  font-size: 20px;
+  content: 'Nenhum resultado encontrado';
+}
+
+div .justify-content-sm-end label {
+  display: none;
+}
+
+div .justify-content-sm-end:before {
+  margin-right: 10px;
+  content: 'Mostrar';
+}
+
+.wallet-info-msg {
+  float: left;
+  margin-top: 15px;
+  font-size: 13px;
+  color: grey;
+}
+
+.wallet-btn-options {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.wallet-info-msg-rating {
+  margin-top: 15px;
+  font-size: 13px;
+  color: grey;
+}
+
+.select-a {
+  background-color: #2eb85c;
+  color: #fff;
+  font-weight: bold;
+}
+
+.select-b {
+  background-color: #3399ff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.select-c {
+  background-color: #636f83;
+  color: #fff;
+  font-weight: bold;
+}
+
+.tables-compare {
+  float: left;
+  width: 32%;
+  margin-left: 10px;
+}

@@ -1,0 +1,12 @@
+export const FETCH_USER = "fetchUser";
+export const FETCH_USERS = "fetchUsers";
+export const FETCH_STATES = "fetchStates";
+export const FETCH_CITIES = "fetchCities";
+export const FETCH_ADDRESS = "fetchAddress";
+export const FETCH_ADDRESSES = "fetchAddresses";
+export const GET_USER_LOGGED = "getUserLogged";
+export const SAVE_USER = "saveUser";
+export const SAVE_ADDRESS = "saveAddress";
+export const CHECK_AUTH = "checkAuth";
+export const LOGIN = "login";
+export const LOGOUT = "logout";

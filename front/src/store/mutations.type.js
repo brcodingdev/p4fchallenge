@@ -1,0 +1,11 @@
+export const SET_USER = "setUser";
+export const SET_USERS = "setUsers";
+export const SET_STATES = "setStates";
+export const SET_ADDRESSES = "setAddresses";
+export const SET_ADDRESS = "setAddress";
+export const SET_CITIES = "setCities";
+export const SET_USER_LOGGED = "setUserLogged";
+export const PURGE_AUTH = "logOut";
+export const SET_AUTH = "setAuth";
+export const SET_ERROR = "setError";
+export const RESET_STATE = "resetModuleState";
