@@ -22,7 +22,7 @@
 - Digite o comando ./mvnw spring-boot:run
 
 ### Info
-- Coleção do postman https://www.getpostman.com/collections/2628d5ac3e2570746dc1
+- Coleção do postman https://www.getpostman.com/collections/fee189d7242a2e1fc9f0
 - Swagger UI http://localhost:8080/swagger-ui.html
 
 ### TODO
