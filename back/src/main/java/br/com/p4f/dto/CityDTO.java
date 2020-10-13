@@ -1,6 +1,7 @@
 package br.com.p4f.dto;
 
 import javax.validation.constraints.NotNull;
+import java.util.Objects;
 
 public class CityDTO {
 
@@ -22,5 +23,18 @@ public class CityDTO {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CityDTO cityDTO = (CityDTO) o;
+        return Objects.equals(id, cityDTO.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }

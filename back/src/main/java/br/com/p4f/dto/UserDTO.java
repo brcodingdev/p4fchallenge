@@ -1,6 +1,7 @@
 package br.com.p4f.dto;
 
 import javax.validation.constraints.NotNull;
+import java.util.Objects;
 
 public class UserDTO {
 
@@ -41,5 +42,18 @@ public class UserDTO {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        UserDTO userDTO = (UserDTO) o;
+        return Objects.equals(id, userDTO.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }

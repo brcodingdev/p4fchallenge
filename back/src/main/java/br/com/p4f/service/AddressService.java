@@ -33,7 +33,7 @@ public class AddressService {
         return new PageImpl<>(addressDTOs, pageable, totalAddresses);
     }
 
-    @CachePut(value = "addresses", key = "#address.id")
+    @CacheEvict(value = "addresses", allEntries = true)
     public void update(AddressDTO address) {
         if (!addressRepository.existsById(address.getId())) {
             throw new NotFoundException("address not found");
@@ -41,9 +41,11 @@ public class AddressService {
         addressRepository.save(AddressMapper.INSTANCE.toEntity(address));
     }
 
-    @CachePut(value = "addresses", key = "#address.id")
-    public void create(AddressDTO address) {
-        addressRepository.save(AddressMapper.INSTANCE.toEntity(address));
+    @CacheEvict(value = "addresses", allEntries = true)
+    public AddressDTO create(AddressDTO address) {
+      Address addressEntity
+              =  addressRepository.save(AddressMapper.INSTANCE.toEntity(address));
+      return AddressMapper.INSTANCE.toDto(addressEntity);
     }
 
     @Cacheable(value = "addresses", key = "#id")
@@ -56,7 +58,7 @@ public class AddressService {
         return AddressMapper.INSTANCE.toDto(address.get());
     }
 
-    @CacheEvict(value = "addresses", key = "#id")
+    @CacheEvict(value = "addresses", allEntries = true)
     public void delete(Long id) {
         if (!addressRepository.existsById(id)) {
             throw new NotFoundException("address not found");

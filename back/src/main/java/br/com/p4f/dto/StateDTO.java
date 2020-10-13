@@ -1,6 +1,8 @@
 package br.com.p4f.dto;
 
 
+import java.util.Objects;
+
 public class StateDTO {
 
     private Long id;
@@ -29,5 +31,18 @@ public class StateDTO {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        StateDTO stateDTO = (StateDTO) o;
+        return Objects.equals(id, stateDTO.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }

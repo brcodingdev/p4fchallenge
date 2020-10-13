@@ -1,13 +1,9 @@
 package br.com.p4f.dto;
 
-
-
-import org.springframework.validation.annotation.Validated;
-
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+import java.util.Objects;
 
-@Validated
 public class AddressDTO {
 
     private Long id;
@@ -88,5 +84,18 @@ public class AddressDTO {
 
     public void setState(StateDTO state) {
         this.state = state;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        AddressDTO that = (AddressDTO) o;
+        return Objects.equals(id, that.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }
