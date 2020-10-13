@@ -1,6 +1,6 @@
-#Back
+# Back
 
-###Stack
+### Stack
 - Java versão 11
 - Spring Boot versão 2.3.4.RELEASE
 - Spring Data
@@ -11,51 +11,53 @@
 - JWT Token
 - Linux Ubuntu
 
-###Como configurar
+### Como configurar
 - Fazer o download do MySQL
 - Criar banco de dados chamado p4f
 - Entre na pasta back
 - Configurar as credenciais do banco de dados src/main/resources/application.properties
 - Digite o comando ./mvnw clean install
 
-###Como executar
-- Digite o comando ./mvnw clean install
+### Como executar
+- Digite o comando ./mvnw spring-boot:run
 
-###Info
+### Info
 - Coleção do postman https://www.getpostman.com/collections/2628d5ac3e2570746dc1
 - Swagger UI http://localhost:8080/swagger-ui.html
 
-###TODO
+### TODO
 - Melhorar a documentaçao do swagger
-- Inserir mensagem de validação do bean validation dos DTOs
+- Melhorar o cache
 - Inserir Docker
 - Permissão somente de ADMIN para acesso da coleção users
 - Testes de integração
 - BDD com cucumber
 - Sonar
+- Lombok
 
-#Front
+# Front
 
-###Stack
+### Stack
 - Vue.js versão 2.6.10
 - Template https://coreui.io
 - jsonwebtoken
 - axios
 - vue-select
 
-###Como configurar
+### Como configurar
 - Entre na pasta front
 - Digite o comando npm install
 
 
-###Como executar
+### Como executar
 - Digite o comando npm run serve
 - No navegador abra o endereço http://localhost:8081/
 - Se autentique como administraodr, usuário: goku, senha: 123
 
-#Info
+# Info
 - O menu Usuários só está com acesso ao usuário com permissão ADMIN
 
-#TODO
+# TODO
 - Testes com Jest
+- Implementação do delete do endereço
 
