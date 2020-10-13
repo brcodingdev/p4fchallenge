@@ -25,7 +25,7 @@ public class AddressService {
     private AddressRepository addressRepository;
 
     @Cacheable(value = "addresses")
-    public synchronized Page<AddressDTO> getAllPaged(String zipCode, Pageable pageable) {
+    public Page<AddressDTO> getAllPaged(String zipCode, Pageable pageable) {
         Page<Address> addressesPage = addressRepository.findAddressByZipCodeContains(zipCode, pageable);
         List<Address> address = addressesPage.getContent();
         List<AddressDTO> addressDTOs = AddressMapper.INSTANCE.toDtoList(address);
